@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'cambria math';
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.scrollable-container {
+    width: 100%;          /* Set a width */
+    height: 100%;          /* Set a height */
+    overflow-y: auto;      /* Add vertical scrollbar if needed */
+    border: 1px solid #ccc; /* Optional: add a border */
+    padding: 10px;        /* Optional: add some padding */
+}
+.grid-container {
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr; /* Three equal columns */
+    grid-template-rows: auto auto; /* Auto-height rows */
+    gap: 0; /* Space between grid items */
+    padding-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    
+}
+.grid-container1 {
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    grid-template-rows: auto auto; /* Auto-height rows */
+    gap: 0px; /* Space between grid items */
+    padding-bottom: 0%;
+    padding-right: 0px;
+
+}
+
+.grid-item1 {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-bottom: 00px;
+    padding-top: 0px;
+    grid-column: span 1; /* Top, Right, Bottom, Left */
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-right: 65px;
+    margin-left: 0px;
+}
+.grid-item2 {  
+    grid-column: span 2; /* Starts at the 2nd column and spans 2 columns */
+    padding-left: 0px;
+    padding-right: 50px;
+    padding-bottom: 0PX;
+    padding-top: 5px;
+    text-align: left; /* Change to left if needed */
+    font-size: 20px; 
+    margin-bottom: 0px;
+    margin: left 0px ;
+    margin-right: 30px;    
+
+}
+.grid-item3 {
+    grid-column: span 2;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+
+    
+}
+.grid-item4 {
+    gap: 80px 100px;
+    grid-column: span 1;
+    padding-left: 120px;
+    padding-right: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: right;
+    align-items: right;
+    font-size: 20px;
+
+}   
+
+.vertical-line-container {
+    display: flex;
+    flex-grow: 1;
+    height: 300px;
+    flex-direction: column; /* Align items vertically */
+    align-items: center;    /* Center items horizontally */
+    position: relative;
+    padding-bottom: 0px;    
+    margin-bottom: 0px;
+}
+.circle1{
+    width: 40px;
+    height: 40px;
+    background-color: #4CAF50; /* Use the same background color as in the image */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Text color */
+    font-size: 20px; /* Font size for the number */
+    font-weight: bold;
+
+}
+.vertical-dash1 {  
+    flex: 1;   
+    flex-grow: 1;  
+    width: 5px;     
+    height: 300px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 00px;
+    padding-top: 0px;
+    border-left: 3.5px dashed;
+    color: #4CAF50;
+    background-origin: border-box;
+}
+.circle2{
+    width: 40px;
+    height: 40px;
+    background-color: #FF8B5C80; /* Use the same background color as in the image */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Text color */
+    font-size: 20px; /* Font size for the number */ 
+    font-weight: bold;
+
+}
+.vertical-dash2 {  
+    width: 5px;
+    flex: 1;  
+    flex-grow: 1; 
+    height: 200px;      
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 00px;
+    padding-top: 0px;
+    border-left: 3.5px dashed;
+    color: #FF8B5C80;
+    background-origin: border-box;
+}
+.circle3{
+
+    width: 40px;
+    height: 40px;
+    background-color: #5F95FF80; /* Use the same background color as in the image */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Text color */
+    font-size: 20px; /* Font size for the number */
+    font-weight: bold;
+
+}
+.vertical-dash3 {            
+    flex: 1;  
+    width: 5px;        
+    height: 300px;
+    flex-grow: 1;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 00px;
+    padding-top: 0px;
+    border-left: 3.5px dashed;
+    color: #5F95FF80;
+    background-origin: border-box;
+}
+.circle4{
+    width: 40px;
+    height: 40px;
+    background-color: #99D14C80; /* Use the same background color as in the image */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Text color */
+    font-size: 20px; /* Font size for the number */
+    font-weight: bold;
+
+}
+.vertical-dash4 {            
+    flex: 1;     
+    width: 5px;     
+    height: 300px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 00px;
+    padding-top: 0px;
+    flex-grow: 1;
+    border-left: 3.5px dashed;
+    color: #99D14C80;
+    background-origin: border-box;
+}
+.circle5{
+    width: 40px;
+    height: 40px;
+    background-color: #F9B82180; /* Use the same background color as in the image */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Text color */
+    font-size: 20px; /* Font size for the number */
+    font-weight: bold;
+
+}
+.vertical-dash5 {            
+    flex: 1;  
+    width: 5px;        
+    height: 300px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 00px;
+    padding-top: 0px;
+    flex-grow: 1;
+    border-left: 3.5px dashed;
+    color: #F9B82180;
+    background-origin: border-box;
+}
+.circle6{
+    width: 40px;
+    height: 40px;
+    background-color: #FB665D80; /* Use the same background color as in the image */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Text color */
+    font-size: 20px; /* Font size for the number */
+    font-weight: bold;
+
+}
+.vertical-dash6 {            
+    flex: 1;     
+    width: 5px;     
+    height: 300px;
+    flex-grow: 1;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 00px;
+    padding-top: 0px;
+    border-left: 3.5px dashed;
+    color: #FB665D80;
+    background-origin: border-box;
+}
+.circle7{
+    width: 40px;
+    height: 40px;
+    background-color: #0E5D7680; /* Use the same background color as in the image */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Text color */
+    font-size: 20px; /* Font size for the number */
+    font-weight: bold;
+
+}
+.vertical-dash7 {            
+    width: 5px; 
+    height: 300px;
+    flex-grow: 1;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 00px;
+    padding-top: 0px;
+    border-left: 3.5px dashed;
+    color: #0E5D7680;
+    background-origin: border-box;
+}
+.circle8{
+    width: 40px;
+    height: 40px;
+    background-color: #5F95FF80; /* Use the same background color as in the image */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Text color */
+    font-size: 20px; /* Font size for the number */
+    font-weight: bold;
+
+}
+
+.container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding-top: 80px;
+        padding-bottom: 0%;
+        background-color: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+}
+    
+
+.privacy-policy h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    padding-left: 70px;
+    color: #333;    
+}
+
+.date {
+    padding-left: 70px;
+    color: #999;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.content-section {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    padding-bottom: 0px;
+    word-wrap: normal;
+    
+}
+
+
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.grid1 {
+    
+    height: 50px;
+    justify-content: left;  /* Center horizontally */
+    align-items: left;  
+    display: flex;
+    gap: 2px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.box1 p{
+    font-size: 15px; 
+    justify-content: center;  /* Center horizontally */
+    align-items: center;    
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.class b{
+    font-size: 0.1rem;
+}
+
+.box {
+    height: 50px;
+    flex: 1;
+    gap: 0px;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;   
+    padding-bottom: 15px;
+    border-radius: 15px;
+    text-align: left;
+    margin-bottom: 0px;
+    
+}
+
+.box1 {
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    
+}
+
+.box1 h3 {
+    font-size: 1.2rem;
+    justify-content: left;  /* Center horizontally */
+    align-items: left;
+    margin-bottom: 0px;
+    color: #444;
+}
+
+footer {
+    padding-top: 35px;
+    padding-right: 00px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    text-align: center;
+    margin-bottom:  1.5px;
+    margin-left: 0; 
+    background: linear-gradient(to right, #38A484, #F1EFB9); /* Adjust colors as needed */
+    height: 140px; /* Set a height for the footer */
+    color: rgb(33, 155, 88); /* Text color for contrast */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    
+    
+}
+
+footer p {
+    text-align: right;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-left: px;
+    font-size: 0.8rem;
+    color: #0c0c0c;
+}
+.logo-right {
+    margin-left: 50px; /* Adjust the value as needed */
+}
+
+
+/* ||||||||||||||||||||||||||||||||||||||||||||  responsive section   ||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+    .container {
+        margin-bottom: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 15px;
+        padding-bottom: 0px;
+        max-width: 100%; /* Allow almost full width */
+    }
+    .content-section {
+        padding: 0px;  /* Reduced padding */
+        font-size: 0.9rem;  /* Slightly smaller font size */
+        line-height: 1.4;  /* Slightly tighter line spacing */
+    }
+    body {
+        background-color: #f0f0f0; /* Change background for mobile */
+        font-size: 0.7rem; /* Smaller font for mobile */
+        line-height: 1.4; /* Adjust line height for better readability */
+        padding-top: 10px;
+        padding-left: 0.5px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+        text-align: left; 
+    }
+    .grid-container {
+        display: flex; /* Switch to flexbox for a row layout */
+        flex-direction: row; /* Stack items vertically */
+        justify-content: space-between;
+    }
+    .grid-container1 {
+        display: flex; /* Switch to flexbox for a row layout */
+        flex: 1; 
+        flex-direction: row; /* Stack items vertically */
+        justify-content: space-between;
+    }
+    
+    .grid-item1, .grid-item2 {
+        font-size: 0.1rem;
+        flex: 1; /* Allow both items to take equal space */
+        margin: 0px 0; /* Add vertical spacing between items */
+        text-align: left; 
+        align-content: left;
+    }
+
+    .grid-item2 {
+        flex: 1;
+        font-size: 0.7rem; 
+        padding-left: 0; /* Reset padding for better spacing */
+         /* Reset padding for better spacing */
+        text-align: left; 
+        flex: 1; /* Allow both items to take equal space */
+        margin: 0px; /* Optional: add some spacing */
+        margin-right: 10px; /* Reduce right margin */
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        text-align: left; 
+        justify-content: space-between; 
+        align-content: left;
+        
+    }
+     .grid-item4 {
+        
+        /* Allow both items to take equal space */
+        flex-direction: row;
+        text-align: right; 
+        align-content: right;
+        padding-left: 15px;
+        padding-right: 40px;
+        padding-top: 15px;
+        padding-bottom: 18px;
+       
+    }
+    .grid-item3{
+        padding-left: 1px;
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+    .grid-item2 object{
+        width: auto;
+        height: auto;
+    }
+    .grid-item4 object{
+        width:  4.6rem;
+        height: 4.6rem;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 10px;
+        padding-top: 10px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        gap: 15px;
+        
+    }
+    
+   
+    
+   
+
+
+    .vertical-line-container {
+        padding-bottom: 0px;    
+        margin-bottom: 0px;
+        /* height: auto; Adjust height for smaller screens */
+        display: flex;
+        height: 300px auto;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 0px; /* Optional: add some spacing */
+        margin-right: 0px;
+        margin-left: 0px; /* Reduce right margin */
+        padding-top: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        text-align:left; 
+        display: flex;
+        position: relative;
+        justify-content: left; /* Center align the vertical line and circle */
+        align-items: left; /* Align items at the top */
+    }
+
+    .box1 {
+        flex: 1; /* Allow boxes to be equally sized */
+        margin-bottom: 05px; /* Space out boxes */
+        flex-direction: row;
+        padding-left: 05px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+    }
+    .box{
+        flex: 1; /* Allow boxes to be equally sized */
+        margin-bottom: 10px; /* Space out boxes */
+        flex-direction: row;
+        height: 40px;  /* Shorter box */
+        padding-bottom: 6px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .box object{
+        height: 2.9rem;
+        width: 2.9rem;
+    }
+
+    .grid1 {
+        flex: 1;
+        flex-direction: row; /* Stack box items vertically */
+        font-size: 0.7rem;
+        line-height: 1.5; 
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-bottom: 2px;
+        margin-bottom: 2px;
+
+    }
+    
+
+    h2 {
+        padding-top: 10px;
+        font-size: 0.95rem; /* Smaller heading size for mobile */
+    }
+
+    .box1 h3 {
+        font-size: 0.65rem; /* Smaller subheading size for mobile */
+        padding-left: 5px;  /* Increased padding for better spacing */
+        padding-right: 5%;
+        padding-bottom: 2.5px;
+        padding-top: 2.5px;
+    }
+
+    .box1 p {
+        font-size: 0.54rem ; 
+        line-height: 0.5rem; 
+        text-overflow: clip;    
+        flex-direction : row;
+        padding-left: 03px;
+        padding-top: 0px;
+        padding-bottom: 15px;
+        justify-content: center;
+        margin-bottom: 10px;
+       
+    }
+
+    footer {
+        height: 130px;
+        font-size: 0.5rem; /* Smaller title size for mobile */
+        text-align:left; 
+        display: flex;
+        position: relative;
+        justify-content: center; /* Center align the vertical line and circle */
+        align-items: center; /* Align items at the top */
+        margin-top: 15px;
+        margin-left: 0px; /* Reduce right margin */
+        padding-top: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    footer p {
+        justify-content: center;
+        flex-direction: row; 
+        position: relative;
+        text-align: center; /* Center align footer text */
+        margin-top: 15px;
+        margin-left: 0px; /* Reduce right margin */
+        padding-top: 15px;
+        padding-left: 5px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        font-size: 0.3rem;
+    }
+    
+    .privacy-policy h1 {
+        font-size: 2rem; /* Smaller title size for mobile */
+        text-align:left; 
+        display: flex;
+        position: relative;
+        justify-content: left; /* Center align the vertical line and circle */
+        align-items: left; /* Align items at the top */
+        margin-top: 15px;
+        margin-left: 15px; /* Reduce right margin */
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .date {
+        font-size: 0.8rem; /* Smaller date size for mobile */
+        text-align:left; 
+        display: flex;
+        position: relative;
+        justify-content: left; /* Center align the vertical line and circle */
+        align-items: left; /* Align items at the top */
+        margin-top: 0px;
+        margin-left: 15px; /* Reduce right margin */
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+    .circle1, .circle2, .circle3, .circle4, .circle5, .circle6, .circle7, .circle8 {
+        display: flex;
+        width: 25px;   /* Smaller size */
+        height: 25px;
+        font-size: 12px;  /* Adjust font size */
+    }
+
+    .vertical-dash1, .vertical-dash2, .vertical-dash3, .vertical-dash4, .vertical-dash5, .vertical-dash6, .vertical-dash7 {
+        height: 150px;  /* Reduce height */
+        
+    }
+    
+    
+
+    
+}
