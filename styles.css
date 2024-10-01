@@ -297,7 +297,27 @@ footer object{
         width: auto;
         height: auto;
     }
+    h1 {
+        display: flex;
+        font-size: 20px;
+        flex-flow: row;
+        flex-direction: row; 
+        padding-left: 0px;
+    }
+    h2 {
+        font-size: 20px;
+    }
 
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: left;
+        justify-content:center ;
+        line-height: 1.4;
+    }
     /* h1, h2, h3, p {
         text-align: center; Center-align text for better readability on smaller screens */
     /* } */
@@ -310,7 +330,7 @@ footer object{
         flex-direction: column; /* Align items vertically */
         align-items: center;    /* Center items horizontally */
         position: relative;
-        padding-right: 10px;
+        padding-right: 20px;
         height: 100%;
     }
     .circle1, .circle2, .circle3, .circle4, .circle5, .circle6, .circle7, .circle8 {
@@ -359,6 +379,7 @@ footer object{
         width: 4px;           
         border-left: 2.5px dashed #4CAF50; /* Dashed line with color */
         flex-grow: 1; /* he kadun takaych jr nay chalal tr*/
+        height: 100%;
     }
     .vertical-dash2 {
         border-left-color: #FF8B5C80;
@@ -389,7 +410,7 @@ footer object{
     .grid-container {
         /*display: block;  Stack items vertically */
         display: grid;
-        grid-template-columns: 20% 1fr; /* Three equal columns */
+        grid-template-columns: 30% 1fr; /* Three equal columns */
         grid-template-rows: auto auto;
     }
 
@@ -408,12 +429,45 @@ footer object{
 
     /* Adjust object icon sizes for tablets */
     object {
-        width: 25px;
-        height: 25px;
+        width: 49px;
+        height: 49px;
     }
 
-    footer h2 {
-        font-size: 16px;
+    /* Adjust footer font size and logo sizes for mobile */
+    
+    footer h2{
+        flex-grow: 1;
+        flex-flow: column;
+        flex-direction: column; /* Align items vertically */
+        align-items: center; 
+        font-size: 9px;
+        padding-left: 30px;
+        padding-right: 30px;
+    
+    }
+    footer object{
+        width: 49px; /* Adjust logo sizes */
+        height: 49px;
+    
+    }
+    footer {
+        display: flex;
+        flex-direction: row;    
+        height: inherit;
+        padding-top: 15px;
+        padding-right: 00px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: right;
+        margin-bottom:  1.8px;
+        margin-left: 0; 
+        background: linear-gradient(to right, #38A484, #F1EFB9); /* Adjust colors as needed */
+        color: rgb(33, 155, 88); /* Text color for contrast */
+        align-items: center; /* Vertically center content */
+        margin-right: 0px;
+        column-gap: 19px;
+        
+        
     }
 }
 
@@ -553,10 +607,17 @@ footer object{
         grid-template-rows: auto auto;
     }
 
-    .grid-item1, .grid-item2 {
+    .grid-item1{
         width: 100%; /* Full width for both columns */
         margin-bottom: 0px; /* Add space between items */
         text-align: left;
+        padding-left: 10px;
+    } 
+    .grid-item2 {
+        width: 100%; /* Full width for both columns */
+        margin-bottom: 0px; /* Add space between items */
+        text-align: center;
+        padding-left: 10px;
     }
 
     /* Adjust object icon sizes for mobile */
