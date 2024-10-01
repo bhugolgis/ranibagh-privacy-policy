@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('static/FontFamily/Poppins-Regular.ttf') format('woff2'),
+         url('fonts/Poppins-Regular.woff') format('woff'),
+         url('fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.scrollable-container {
+    height: auto;
+    width: 100%;          /* Set a width */
+             /* Set a height */
+    overflow-y: auto;      /* Add vertical scrollbar if needed */
+    border: 1px solid #ccc; /* Optional: add a border */
+    padding: 10px;        /* Optional: add some padding */
+}
+
+.container {
+    
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-top: 80px;
+    padding-bottom: 0%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.privacy-policy h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    padding-left: 70px;
+    color: #333;    
+}
+.date {
+    padding-left: 70px;
+    color: #999;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.content-section {
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
+    
+}
+
+.grid-container {
+   
+    margin-bottom: auto;
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Three equal columns */
+    grid-template-rows: auto auto; /* Auto-height rows */
+  /* Space between grid items */
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+
+    
+}
+
+.grid-item1 {
+
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 00px;
+    padding-top: 0px;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-right: px;
+    margin-left: 20px;
+    
+}
+/* .vertical-line-container {
+    display: flex;
+    flex-grow: 1;
+    height: auto;
+    flex-direction: column; 
+    align-items: center;    
+    position: relative;
+    padding-bottom: auto;    
+    margin-bottom: auto;
+    padding-right: 10px;
+   
+} */
+
+.grid-item2 {  
+    
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-bottom:0px;
+    padding-top: 0px;
+    text-align: left; 
+    margin-bottom: auto;
+    margin: left 10px ;
+    margin-right: 0px;    
+
+}
+.grid-item2 p{
+    font-size: 56;
+    padding-bottom: 30px; 
+    padding-right: 25px;
+
+}
+strong{
+    font-size: 0.8rem;  
+}
+
+h2 {
+    font-size: 1.8rem,auto;
+    margin-bottom: 10px;
+    color: #333;
+    
+}
+
+.box {
+    
+    flex: 1;
+    gap: 0px;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;   
+    text-align: left;
+    margin-bottom: 10px;
+    
+}
+
+.box p{
+    font-size: 0.9rem; 
+    justify-content: center;  /* Center horizontally */
+    align-items: center;    
+    padding-bottom: 10px;
+    margin-bottom:auto ;
+}
+.box h3{
+    font-size: 0.8rem; 
+    padding-bottom: 10px;
+    margin-bottom:auto;
+
+}
+
+
+
+
+   
+
+footer {
+    display: flex;
+    flex-direction: row;    
+    height: inherit;
+    padding-top: 15px;
+    padding-right: 00px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    text-align: right;
+    margin-bottom:  1.5px;
+    margin-left: 0; 
+    background: linear-gradient(to right, #38A484, #F1EFB9); /* Adjust colors as needed */
+    color: rgb(33, 155, 88); /* Text color for contrast */
+    align-items: center; /* Vertically center content */
+    margin-right: 0px;
+    column-gap: 49px;
+    
+    
+}
+
+
+footer h2{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 600px;
+    padding-left: 50px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+
+}
+footer object{
+    align-items: right; /* Vertically center content */
+   
+    
+    column-gap: 40px;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+
+}
+
+.vertical-line-container {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column;
+    flex-direction: column; /* Align items vertically */
+    align-items: center;    /* Center items horizontally */
+    position: relative;
+    padding-right: 10px;
+    height: 100%;
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5, .circle6, .circle7, .circle8 {
+    width: 40px;
+    height: 40px;
+    background-color: #4CAF50; /* Default background color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Text color */
+    font-size: 20px; /* Font size for the number */
+    font-weight: bold;
+    margin-bottom: 0px; /* Add some space between the circle and the dashed line */
+}
+
+.circle2 {
+    background-color: #FF8B5C80;
+}
+
+.circle3 {
+    background-color: #5F95FF80;
+}
+
+.circle4 {
+    background-color: #99D14C80;
+}
+
+.circle5 {
+    background-color: #F9B82180;
+}
+
+.circle6 {
+    background-color: #FB665D80;
+}
+
+.circle7 {
+    background-color: #0E5D7680;
+}
+
+.circle8 {
+    background-color: #5F95FF80;
+}
+
+.vertical-dash1, .vertical-dash2, .vertical-dash3, .vertical-dash4, .vertical-dash5, .vertical-dash6, .vertical-dash7 {
+        display: flex;   
+        width: 5px;           
+        border-left: 3.6px dashed #4CAF50; /* Dashed line with color */
+        flex-grow: 1; /* This will allow the dashed line to stretch and fill the space */
+}
+
+.vertical-dash2 {
+    border-left-color: #FF8B5C80;
+    
+}
+
+.vertical-dash3 {
+    border-left-color: #5F95FF80;
+}
+
+.vertical-dash4 {
+    border-left-color: #99D14C80;
+}
+
+.vertical-dash5 {
+    border-left-color: #F9B82180;
+}
+
+.vertical-dash6 {
+    border-left-color: #FB665D80;
+}
+
+.vertical-dash7 {
+    border-left-color: #0E5D7680;
+}
+
+
+/* For Tablets (Width: 768px and below) */
+@media (max-width: 768px) {
+    /* Adjust container padding and text alignment */
+    .container {
+        width: auto;
+        height: auto;
+    }
+
+    /* h1, h2, h3, p {
+        text-align: center; Center-align text for better readability on smaller screens */
+    /* } */
+
+    /* Reduce the circle size for tablets */
+    .vertical-line-container {
+        display: flex;
+        flex-grow: 1;
+        flex-flow: column;
+        flex-direction: column; /* Align items vertically */
+        align-items: center;    /* Center items horizontally */
+        position: relative;
+        padding-right: 10px;
+        height: 100%;
+    }
+    .circle1, .circle2, .circle3, .circle4, .circle5, .circle6, .circle7, .circle8 {
+        width: 35px;
+        height: 35px;
+        background-color: #4CAF50; /* Default background color */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black; /* Text color */
+        font-size: 18px;/* Font size for the number */
+        font-weight: bold;
+        margin-bottom: 0px; /* Add some space between the circle and the dashed line */
+    }
+    .circle2 {
+        background-color: #FF8B5C80;
+    }
+    
+    .circle3 {
+        background-color: #5F95FF80;
+    }
+    
+    .circle4 {
+        background-color: #99D14C80;
+    }
+    
+    .circle5 {
+        background-color: #F9B82180;
+    }
+    
+    .circle6 {
+        background-color: #FB665D80;
+    }
+    
+    .circle7 {
+        background-color: #0E5D7680;
+    }
+    
+    .circle8 {
+        background-color: #5F95FF80;
+    }
+
+    .vertical-dash1, .vertical-dash2, .vertical-dash3, .vertical-dash4, .vertical-dash5, .vertical-dash6, .vertical-dash7 {
+        display: flex;   
+        width: 4px;           
+        border-left: 2.5px dashed #4CAF50; /* Dashed line with color */
+        flex-grow: 1; /* he kadun takaych jr nay chalal tr*/
+    }
+    .vertical-dash2 {
+        border-left-color: #FF8B5C80;
+        
+    }
+    
+    .vertical-dash3 {
+        border-left-color: #5F95FF80;
+    }
+    
+    .vertical-dash4 {
+        border-left-color: #99D14C80;
+    }
+    
+    .vertical-dash5 {
+        border-left-color: #F9B82180;
+    }
+    
+    .vertical-dash6 {
+        border-left-color: #FB665D80;
+    }
+    
+    .vertical-dash7 {
+        border-left-color: #0E5D7680;
+    }
+
+    /* Adjust the grid layout for tablets */
+    .grid-container {
+        /*display: block;  Stack items vertically */
+        display: grid;
+        grid-template-columns: 20% 1fr; /* Three equal columns */
+        grid-template-rows: auto auto;
+    }
+
+    .grid-item1{
+        width: 100%; /* Full width for both columns */
+        margin-bottom: 0px; /* Add space between items */
+        text-align: left;
+        padding-left: 10px;
+    } 
+    .grid-item2 {
+        width: 100%; /* Full width for both columns */
+        margin-bottom: 0px; /* Add space between items */
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    /* Adjust object icon sizes for tablets */
+    object {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer h2 {
+        font-size: 16px;
+    }
+}
+
+/* For Mobile Devices (Width: 480px and below) */
+@media (max-width: 480px) {
+    /* Reduce container padding for mobile */
+    .container {
+        padding-top: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Adjust the font size for headers and text for mobile */
+    h1 {
+        display: flex;
+        font-size: 20px;
+        flex-flow: row;
+        flex-direction: row; 
+        padding-left: 0px;
+    }
+    .privacy-policy{
+      
+        font-size: 10px;
+        padding-left: 0px;
+        padding-right: 5px;
+        margin-left: 0px;
+        margin-right: 15px;
+
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: left;
+        justify-content:center ;
+        line-height: 1.4;
+    }
+    
+
+    /* Reduce the size of the circles for mobile */
+    .vertical-line-container {
+        display: flex;
+        flex-grow: 1;
+        flex-flow: column;
+        flex-direction: column; /* Align items vertically */
+        align-items: left;    /* Center items horizontally */
+        position: relative;
+        padding-right: 15px;
+        height: 100%;
+    }
+    .circle1, .circle2, .circle3, .circle4, .circle5, .circle6, .circle7, .circle8 {
+        width: 30px;
+        height: 30px;
+        background-color: #4CAF50; /* Default background color */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black; /* Text color */
+        font-size: 16px;/* Font size for the number */
+        font-weight: bold;
+        margin-bottom: 0px; /* Add some space between the circle and the dashed line */
+    }
+    .circle2 {
+        background-color: #FF8B5C80;
+    }
+    
+    .circle3 {
+        background-color: #5F95FF80;
+    }
+    
+    .circle4 {
+        background-color: #99D14C80;
+    }
+    
+    .circle5 {
+        background-color: #F9B82180;
+    }
+    
+    .circle6 {
+        background-color: #FB665D80;
+    }
+    
+    .circle7 {
+        background-color: #0E5D7680;
+    }
+    
+    .circle8 {
+        background-color: #5F95FF80;
+    }
+
+    /* Adjust the dashed line width for mobile */
+    
+    .vertical-dash1, .vertical-dash2, .vertical-dash3, .vertical-dash4, .vertical-dash5, .vertical-dash6, .vertical-dash7 {
+        display: flex;   
+        width: 3px;           
+        border-left: 2px dashed #4CAF50; /* Dashed line with color */
+        flex-grow: 1; 
+        height: 100%;
+    }
+    .vertical-dash2 {
+        border-left-color: #FF8B5C80;
+        
+    }
+    
+    .vertical-dash3 {
+        border-left-color: #5F95FF80;
+    }
+    
+    .vertical-dash4 {
+        border-left-color: #99D14C80;
+    }
+    
+    .vertical-dash5 {
+        border-left-color: #F9B82180;
+    }
+    
+    .vertical-dash6 {
+        border-left-color: #FB665D80;
+    }
+    
+    .vertical-dash7 {
+        border-left-color: #0E5D7680;
+    }
+
+    /* Stack grid items vertically for mobile */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 25% 1fr; /* Three equal columns */
+        grid-template-rows: auto auto;
+    }
+
+    .grid-item1, .grid-item2 {
+        width: 100%; /* Full width for both columns */
+        margin-bottom: 0px; /* Add space between items */
+        text-align: left;
+    }
+
+    /* Adjust object icon sizes for mobile */
+    object {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* Adjust footer font size and logo sizes for mobile */
+    footer h2 {
+        
+        font-size: 9px;
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+
+    footer object {
+        width: 45px; /* Adjust logo sizes */
+        height: 45px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;    
+        height: inherit;
+        padding-top: 10px;
+        padding-right: 00px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: right;
+        margin-bottom:  1.5px;
+        margin-left: 0; 
+        background: linear-gradient(to right, #38A484, #F1EFB9); /* Adjust colors as needed */
+        color: rgb(33, 155, 88); /* Text color for contrast */
+        align-items: center; /* Vertically center content */
+        margin-right: 0px;
+        column-gap: 19px;
+        
+        
+    }
+}
+
+
+
